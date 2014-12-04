@@ -31,7 +31,7 @@
 
 - (void)play
 {
-    [self schedule:@selector(step) interval:0.1f];
+    [self schedule:@selector(step) interval:0.3f];
 }
 
 - (void)pause
@@ -42,6 +42,7 @@
 - (void)step
 {
     [_grid evolveStep];
+    [_grid updateCreatures];
     _generationLabel.string = [NSString stringWithFormat:@"%d",_grid.generation];
     _populationLabel.string = [NSString stringWithFormat:@"%d",_grid.totalAlive];
 }
