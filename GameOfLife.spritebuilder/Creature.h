@@ -12,7 +12,7 @@
 
 @property (nonatomic, assign) BOOL isAlive;
 
-@property (nonatomic, assign) NSInteger livingNeighors;
+@property (nonatomic, assign) NSInteger livingNeighbors;
 
 - (id)initCreature;
 
