@@ -14,4 +14,6 @@
 
 @property (nonatomic, assign) int generation;
 
+-(id)evolveStep;
+
 @end
